@@ -1,4 +1,4 @@
-package ru.kpfu.itis.lldan;
+package ru.kpfu.itis.sergeev;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -7,10 +7,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "baseServlet", urlPatterns = "/")
+@WebServlet(name = "loginServlet", urlPatterns = "/")
 public class LoginServlet extends HttpServlet {
-    public static final String LOGIN = "lldan";
-    public static final String PASSWORD = "itis";
+    public static final String LOGIN = "rostik";
+    public static final String PASSWORD = "52";
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -22,9 +22,9 @@ public class LoginServlet extends HttpServlet {
         String login = req.getParameter("login");
         String password = req.getParameter("password");
         if (login.equals(LOGIN) && password.equals(PASSWORD)) {
-            resp.sendRedirect("/HW3_war_exploded/getweather");
+            resp.sendRedirect("/task3_war_exploded/getWeather");
         } else {
-            resp.sendRedirect("/HW3_war_exploded/error");
+            resp.sendRedirect("/task3_war_exploded/error");
         }
     }
 }

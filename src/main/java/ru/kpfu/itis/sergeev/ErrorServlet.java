@@ -1,4 +1,4 @@
-package ru.kpfu.itis.lldan;
+package ru.kpfu.itis.sergeev;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

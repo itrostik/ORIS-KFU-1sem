@@ -1,5 +1,5 @@
 
-package ru.kpfu.itis.lldan;
+package ru.kpfu.itis.sergeev;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
@@ -14,18 +14,17 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.DecimalFormat;
 import java.util.HashMap;
 import java.util.Map;
 
-@WebServlet(name = "getWeatherServlet", urlPatterns = "/getweather")
+@WebServlet(name = "getWeatherServlet", urlPatterns = "/getWeather")
 public class GetWeatherServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("getweather.ftl").forward(req, resp);
+        req.getRequestDispatcher("getWeather.ftl").forward(req, resp);
     }
 
     @Override

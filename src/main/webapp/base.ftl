@@ -5,7 +5,7 @@
 </head>
 
 <body>
-<header>Прогноз погоды</header>
+<header>Weather forecast</header>
 
 <main>
     <div><@main__title></@main__title></div>

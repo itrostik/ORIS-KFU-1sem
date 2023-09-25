@@ -4,13 +4,13 @@
 <#macro title>Погода</#macro>
 
 <#macro main__title>
-    Результаты
+    Result
 </#macro>
 
 <#macro main__content>
     <div>
         <b>
-            Town:
+            City:
         </b>
         <#if townName?has_content>
             ${townName}

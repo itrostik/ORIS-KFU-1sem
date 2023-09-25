@@ -1,20 +1,20 @@
 <html lang="ru">
 <#include "base.ftl">
 
-<#macro title>Получение погоды</#macro>
+<#macro title>Getting weather</#macro>
 
-<#macro main__title>Получение погоды</#macro>
+<#macro main__title>Getting weather</#macro>
 
 <#macro main__content>
-    <p>Пример города: </p>
-    <form action="getweather" method="post">
+    <p>Example city: </p>
+    <form action="getWeather" method="post">
         <label>
-            <div>Город:</div>
+            <div>Сity:</div>
             <input type="text" name="town">
         </label>
 
 
-        <input type="submit" value="Получить погоду">
+        <input type="submit" value="Get weather">
     </form>
 
 </#macro>

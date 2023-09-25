@@ -1,24 +1,24 @@
 <html lang="ru">
 <#include "base.ftl">
 
-<#macro title>Авторизация</#macro>
+<#macro title>Authorization</#macro>
 
-<#macro main__title>Авторизация</#macro>
+<#macro main__title>Authorization</#macro>
 
 <#macro main__content>
-    <p>Пример логина и пароля для теста: LOGIN = "lldan" и PASSWORD = "itis"</p>
+    <p>Example login and password for the test: LOGIN = "rostik" and PASSWORD = "52"</p>
     <form action="login" method="post">
         <label>
-            <div>Логин:</div>
+            Login:
             <input type="text" name="login">
         </label>
         <label>
-            <div>Пароль:</div>
+            Password:
             <input type="password" name="password">
         </label>
 
 
-        <input type="submit" value="Войти">
+        <input type="submit" value="Enter">
     </form>
 
 </#macro>
